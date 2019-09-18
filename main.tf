@@ -49,22 +49,4 @@ resource "azurerm_subnet" "vnet01-sub1" {
 
 }
 
-resource "azurerm_subnet" "vnet01-sub2" {
-  name                 = "sub1"
-  resource_group_name  = "${azurerm_resource_group.S.name}"
-  virtual_network_name = "${azurerm_virtual_network.vnet01.name}"
-  address_prefix       = "10.0.2.0/24"
-
-
-}
-
-resource "azurerm_subnet" "vnet01-sub3" {
-  name                 = "sub1"
-  resource_group_name  = "${azurerm_resource_group.S.name}"
-  virtual_network_name = "${azurerm_virtual_network.vnet01.name}"
-  address_prefix       = "10.0.2.0/24"
-
-
-}
-
 
